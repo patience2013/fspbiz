@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fangshang.fspbiz">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--//读取设备硬件信息，统计数据-->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+<!--    //读取系统信息，包含系统版本等信息，用作统计-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--//获取设备的网络状态，鉴权所需网络代理-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!--//允许sd卡写权限，需写入地图数据，禁用后无法显示地图-->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!--//获取统计数据-->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+   <!-- //鉴权所需该权限获取进程列表-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <!--用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <!--用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <!--用于申请调用A-GPS模块-->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"></uses-permission>
+    <!--用于申请获取蓝牙信息进行室内定位-->
+    <uses-permission android:name="android.permission.BLUETOOTH"></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:name=".App"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/BaseAppTheme">
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="ba8d5edfaff017df10927b5f9b65587b">
+            //开发者申请的key
+        </meta-data>
+        <activity android:name=".activity.login.SplashActivity">
+        <!--<activity android:name=".activity.login.CertificationActivity">-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.login.WelcomeActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.ForgetPassActivity" />
+        <activity android:name=".fragment.me.activity.SetActivity" />
+        <activity android:name=".fragment.me.activity.MeInfoActivity" />
+        <activity android:name=".fragment.me.activity.FeedbackActivity" />
+        <activity android:name=".fragment.me.activity.AccountpassActivity" />
+        <activity android:name=".fragment.me.activity.SetUserNameActivity" />
+        <activity android:name=".fragment.me.activity.ChangeMobileActivity" />
+        <activity android:name=".fragment.me.activity.ChangePassActivity" />
+        <activity android:name=".fragment.me.activity.NotificationSetActivity" />
+        <activity android:name=".fragment.me.activity.AboutUsActivity" />
+        <activity android:name=".fragment.housing.BuildingManageActivity" />
+        <activity android:name=".activity.login.CertificationActivity" />
+        <activity android:name=".fragment.me.activity.CertificationDetailActivity" />
+        <activity android:name=".fragment.housing.AddBuildActivity" />
+        <activity android:name=".fragment.housing.HouseListActivity" />
+        <activity android:name=".fragment.housing.build.BuildDetailActivity" />
+        <activity android:name=".fragment.housing.build.MyReleaseBuildActivity" />
+        <activity android:name=".fragment.housing.HouseDetailActivity" />
+        <activity android:name=".fragment.housing.AddHouseActivity" />
+        <activity android:name=".fragment.housing.build.SearchHouseActivity" />
+        <activity android:name=".fragment.housing.build.SearchHouseListActivity" />
+        <activity android:name=".fragment.housing.build.UserBuildDetailActivity" />
+        <activity android:name=".activity.login.AgreementH5Activity" />
+
+
+        <service android:name=".service.DownloadService" />
+        <service android:name="com.amap.api.location.APSService"></service>
+
+    </application>
+
+</manifest>

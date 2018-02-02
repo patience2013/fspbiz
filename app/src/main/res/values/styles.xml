@@ -1,0 +1,100 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!--登录页面编缉框的背景样式-->
+    <style name="LoginEditTextBG">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:background">@drawable/shape_edit_bg</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+
+    <!-- dialog样式 -->
+    <style name="dialog_custom" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>    <!--是否浮在界面上-->
+        <item name="android:windowIsTranslucent">true</item> <!--是否半透明-->
+        <item name="android:windowNoTitle">false</item>       <!--是否有标题-->
+        <item name="android:windowBackground">@android:color/transparent</item> <!--窗口背景色透明-->
+        <item name="android:backgroundDimEnabled">false</item> <!--背景是否模糊显示-->
+    </style>
+
+    <!-- dialog底部弹出菜单动画 -->
+    <!--<style name="bottom_menu_animation" parent="android:Animation">-->
+        <!--<item name="@android:windowEnterAnimation">@anim/bottom_menu_enter</item>-->
+        <!--<item name="@android:windowExitAnimation">@anim/bottom_menu_exit</item>-->
+    <!--</style>-->
+    <style name="ClubToolba" parent="Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item><!-- 设置该属性解决空白部分-->
+    </style>
+    <!--页面标题的文字样式-->
+    <style name="TitleText">
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textColor">@color/main_textColor</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!--列表item标题的文字样式-->
+    <style name="List_item_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/blackTitle</item>
+    </style>
+    <!--列表item标题的文字样式-->
+    <style name="List_item_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/blackTitle</item>
+    </style>
+
+    <style name="Theme.Dialog.NoTitle.Translucent" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowFrame">@null</item><!-- 边框 -->
+        <item name="android:windowIsFloating">true</item><!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item><!-- 半透明 -->
+        <item name="windowNoTitle">true</item><!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item><!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item><!-- 模糊 -->
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <!--<style name="Anim_fade" parent="android:Theme.Light.NoTitleBar">-->
+    <!--<item name="android:windowAnimationStyle">@style/fade</item>-->
+    <!--</style>-->
+    <!--updateActivity进入动画-->
+    <style name="fade" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/dd_mask_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/dd_mask_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/dd_mask_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/dd_mask_out</item>
+    </style>
+
+    <style name="MySwitch" parent="@android:style/Widget.CompoundButton">
+        <item name="android:button">@drawable/switch_bg</item>
+    </style>
+    <style name="popupWindowAnimRight">
+        <item name="android:windowEnterAnimation">@anim/page_anima_right_in</item>
+        <item name="android:windowExitAnimation">@anim/page_anima_right_out</item>
+    </style>
+    <style name="main_menu_animstyle">
+        <item name="android:windowEnterAnimation">@anim/photo_dialog_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/photo_dialog_out_anim</item>
+    </style>
+    <style name="transparentFrameWindowStyle" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/photo_choose_bg</item>
+    </style>
+
+    <!--播放器dialog样式-->
+    <style name="dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

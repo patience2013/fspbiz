@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/transparent</item>
+        <item name="colorPrimaryDark">@color/main_yellow</item><!--状态栏颜色-->
+        <item name="colorAccent">@color/main_yellow</item>
+        <item name="toolbarStyle">@style/ClubToolba</item>
+        <item name="android:listDivider">@drawable/divider_bg</item><!--分割线-->
+    </style>
+    <!--<style name="App.Theme.Dialog.Alert" parent="ThemeOverlay.AppCompat.Dialog.Alert">-->
+    <!--<item name="android:textColorPrimary">@color/black_alpha_240</item>-->
+    <!--</style>-->
+    <style name="TabText" parent="TextAppearance.AppCompat">  
+         <item name="android:textStyle">bold</item>  
+    </style>
+
+    <style name="App.Theme.Dialog.Alert" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="android:textColorPrimary">@color/black_alpha_240</item>
+    </style>
+</resources>

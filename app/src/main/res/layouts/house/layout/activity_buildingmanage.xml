@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tl="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layout_titlebar"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingRight="10dp">
+                <LinearLayout
+                    android:id="@+id/lin_back"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:id="@+id/img_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_back"
+                        android:ellipsize="end"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:visibility="visible" />
+                </LinearLayout>
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ebebeb" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="楼盘管理"
+                    android:textColor="@color/main_textColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/lin_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_release"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:padding="5dp"
+                        android:text="我的发布"
+                        android:textColor="@color/main_textColor"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <com.flyco.tablayout.SegmentTabLayout
+                android:id="@+id/slidingTab"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                tl:tl_indicator_color="@color/main_yellow"
+                tl:tl_indicator_corner_radius="5dp"
+                tl:tl_indicator_height="30dp"
+                tl:tl_indicator_style="BLOCK"
+                tl:tl_tab_space_equal="true"
+                tl:tl_textSelectColor="@color/white"
+                tl:tl_textUnselectColor="@color/main_yellow"
+                tl:tl_textsize="14sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/lin_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/main_textColor"
+            android:text="全部"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/icon_down"/>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="18dp"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:drawableLeft="@drawable/icon_search"
+            android:drawablePadding="5dp"
+            android:textSize="11sp"
+            android:layout_height="30dp"
+            android:hint="楼盘名、价格、面积等关键字搜索"
+            android:textColor="@color/main_gray"
+            android:background="@drawable/search_bg"
+            />
+    </LinearLayout>
+    <com.fangshang.fspbiz.weight.NoSlideViewPager
+                android:id="@+id/vp_housemanage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+</LinearLayout>

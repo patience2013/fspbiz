@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/ll_items"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:background="@color/main_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_all"
+            android:gravity="center"
+            android:text="全部"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+        <TextView
+            android:id="@+id/tv_out_of_date"
+            android:gravity="center"
+            android:text="已过期"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+        <TextView
+            android:id="@+id/tv_less_than_ft"
+            android:gravity="center"
+            android:text="到期日小于15天"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+        <TextView
+            android:id="@+id/tv_less_than_ty"
+            android:gravity="center"
+            android:text="到期日小于30天"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+        <TextView
+            android:id="@+id/tv_less_than_sy"
+            android:gravity="center"
+            android:text="到期日小于60天"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+        <TextView
+            android:id="@+id/tv_less_than_ny"
+            android:gravity="center"
+            android:text="到期日小于90天"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

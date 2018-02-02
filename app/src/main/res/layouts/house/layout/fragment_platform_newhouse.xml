@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg">
+    <com.fangshang.fspbiz.weight.ScreeningMenu
+        android:visibility="visible"
+        android:id="@+id/dropDownMenu"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:ddmaskColor="@color/mask_color"
+        app:ddmenuBackgroundColor="@color/white"
+        app:ddunderlineHeight="2"
+        app:ddmenuSelectedIcon="@drawable/icon_down"
+        app:ddmenuTextSize="12sp"
+        app:ddmenuUnselectedIcon="@drawable/icon_down"
+        app:ddtextSelectedColor="@color/white"
+        app:ddtextUnselectedColor="@color/main_gray"
+        app:ddunderlineColor="@color/white"
+        app:ddtextviewDrawablePadding="10"/>
+
+</LinearLayout>

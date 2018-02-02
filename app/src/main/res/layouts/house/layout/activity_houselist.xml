@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg">
+    <RelativeLayout
+        android:id="@+id/layout_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingRight="10dp">
+        <LinearLayout
+            android:id="@+id/lin_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_back"
+                android:ellipsize="end"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:visibility="visible" />
+        </LinearLayout>
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:background="#ebebeb" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="房源列表"
+            android:textColor="@color/main_textColor"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/lin_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/tv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+               android:src="@drawable/icon_search"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.fangshang.fspbiz.weight.ScreeningMenu
+        android:visibility="visible"
+        android:id="@+id/dropDownMenu"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:ddmaskColor="@color/mask_color"
+        app:ddmenuBackgroundColor="@color/white"
+        app:ddunderlineHeight="2"
+        app:ddmenuSelectedIcon="@drawable/icon_down"
+        app:ddmenuTextSize="12sp"
+        app:ddmenuUnselectedIcon="@drawable/icon_down"
+        app:ddtextSelectedColor="@color/white"
+        app:ddtextUnselectedColor="@color/main_gray"
+        app:ddunderlineColor="@color/white"
+        app:ddtextviewDrawablePadding="10"/>
+
+</LinearLayout>

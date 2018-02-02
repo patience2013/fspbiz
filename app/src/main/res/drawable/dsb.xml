@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/ip_8"
+        android:duration="250" />
+    <item
+        android:drawable="@drawable/ip_9"
+        android:duration="250" />
+    <item
+        android:drawable="@drawable/ip_10"
+        android:duration="250" />
+    <item
+        android:drawable="@drawable/ip_11"
+        android:duration="250" />
+</animation-list>

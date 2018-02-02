@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">房算盘业主版</string>
+    <string name="tips_badge_removed" translatable="false">Badge is removed</string>
+    <string name="the_info_is_not_already_save">信息尚未保存,你确要退出当前页面吗?</string>
+</resources>
